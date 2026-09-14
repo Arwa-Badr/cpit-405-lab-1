@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+  </head>
+
+  <body>
+    <h2>Registration Form</h2>
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+      <br />
+      <br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+      />
+      <br />
+      <br />
+
+      <label for="tel">Telephone:</label>
+      <input
+        type="tel"
+        id="tel"
+        name="tel"
+        placeholder="Enter your tel number"
+      />
+      <br />
+      <br />
+
+      <p>Payment Method:</p>
+      <input type="radio" id="visa" name="payment" value="visa" />
+      <label for="visa">Visa</label>
+
+      <input type="radio" id="card" name="payment" value="card" />
+      <label for="card">Card</label>
+
+      <br />
+      <br />
+
+      <p>Contact:</p>
+
+      <input type="checkbox" id="contactEmail" name="contact" value="email" />
+      <label for="contactEmail">Email</label>
+
+      <input type="checkbox" id="contactTel" name="contact" value="tel" />
+      <label for="contactTel">Telephone</label>
+
+      <input type="checkbox" id="contactSms" name="contact" value="sms" />
+      <label for="contactSms">SMS</label>
+
+      <br />
+      <br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Clear" />
+    </form>
+  </body>
+</html>
+
+
