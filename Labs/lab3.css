@@ -1,0 +1,43 @@
+/* Lab 03 - CSS Structure and Properties */
+
+/* Image Preview */
+.image-preview img {
+  border-top: 30px solid skyblue;
+  border-right: 30px solid lightpink;
+  border-bottom: 30px solid lightgreen;
+  border-left: 30px solid #ffefd5;
+}
+
+/* CSS Selectors */
+
+p > span {
+  color: red;
+}
+
+#header span {
+  color: pink;
+}
+
+span {
+  color: green;
+}
+
+#header *:last-child {
+  color: orange;
+}
+
+#header span:first-child:hover {
+  color: blue;
+}
+
+/* Table */
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
