@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NBA Standings - Sort & Filter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="code.js"></script>
+</head>
+<body>
+  <h1>NBA Standings</h1>
+  <!-- Filter Controls -->
+   <div style="margin-bottom: 15px;">
+    <label for="minWins">Minimum Wins: </label>
+    <input type="number" id="minWins" placeholder="e.g. 45">
+    <button onclick="filterWins()">Filter</button>
+    <button onclick="resetFilter()">Reset</button>
+  </div>
+  
+  <!-- Table -->
+  <table>
+    <thead>
+      <tr>
+        <th onclick="sort(this)">Team<span class="asc"></span></th>
+        <th onclick="sort(this)">Wins<span class="asc"></span></th>
+        <th onclick="sort(this)">Losses<span class="asc"></span></th>
+        <th onclick="sort(this)">Win %<span class="asc"></span></th>
+      </tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Celtics</td>
+        <td>48</td>
+        <td>12</td>
+        <td>0.80</td>
+      </tr>
+      <tr>
+        <td>Heat</td>
+        <td>40</td>
+        <td>32</td>
+        <td>0.56</td>
+      </tr>
+      <tr>
+        <td>76ers</td>
+        <td>52</td>
+        <td>20</td>
+        <td>0.72</td>
+      </tr>
+      <tr>
+        <td>Raptors</td>
+        <td>46</td>
+        <td>26</td>
+        <td>0.64</td>
+      </tr>
+      <tr>
+        <td>Milwaukee Bucks</td>
+        <td>56</td>
+        <td>17</td>
+        <td>0.77</td>
+      </tr>
+    </tbody>
+  </table>
+ 
+</body>
+</html>
+
