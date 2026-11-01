@@ -1,0 +1,89 @@
+:root{
+    --navy:#0a1f44;--navy2:#12306b;--blue:#2563eb;--sky:#60a5fa;--light:#e8f0fe;--text:#1e293b;--bg:#eef3fb}
+*{
+    box-sizing:border-box;margin:0;padding:0}
+html{
+    scroll-behavior:smooth}
+body{
+    font-family:'Segoe UI',Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65}
+.wrap{
+    max-width:1050px;margin:0 auto}
+header{
+    background:linear-gradient(90deg,var(--navy),var(--navy2));color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+header .wrap{
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:16px 20px}
+header h1{
+    font-size:1.5rem}
+header p{
+    font-size:.8rem;color:var(--sky);letter-spacing:.5px}
+nav a{
+    color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;margin-left:22px;padding:6px 2px;border-bottom:2px solid transparent;transition:.2s}
+nav a:hover,nav a.active{
+    color:var(--sky);border-color:var(--sky)}
+main.wrap{
+    display:grid;grid-template-columns:250px 1fr;gap:24px;padding:26px 20px}
+.card{
+    background:#fff;border-radius:14px;padding:24px;box-shadow:0 3px 12px rgba(10,31,68,.1)}
+aside{
+    align-self:start;position:sticky;top:90px;text-align:center}
+.avatar{
+    width:120px;height:120px;border-radius:50%;margin:0 auto 16px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;font-size:2.4rem;font-weight:700;display:flex;align-items:center;justify-content:center;border:3px solid var(--sky);box-shadow:0 0 0 5px var(--light)}
+aside h2{
+    font-size:1rem;color:var(--navy);margin:14px 0 8px;padding-bottom:6px;border-bottom:1px dashed var(--sky)}
+.btn{
+    display:block;background:var(--light);color:var(--navy2);text-decoration:none;font-weight:600;font-size:.85rem;padding:8px;border-radius:8px;margin-bottom:8px;transition:.2s}
+.btn:hover{
+    background:var(--blue);color:#fff;transform:translateX(3px)}
+aside p{
+    font-size:.82rem;margin-bottom:4px;word-break:break-word}
+a{
+    color:var(--blue);transition:.2s}
+a:hover{
+    color:var(--navy2)}
+section{
+    margin-bottom:28px;scroll-margin-top:90px}
+section:last-child{
+    margin-bottom:0}
+section h2{
+    color:var(--navy);font-size:1.25rem;padding-bottom:5px;margin-bottom:14px;border-bottom:2px solid var(--blue)}
+.item{
+    margin-bottom:14px;padding-left:12px;border-left:3px solid var(--sky)}
+.item h3{
+    font-size:1rem;color:var(--navy2)}
+.item .meta{
+    display:flex;justify-content:space-between;flex-wrap:wrap;font-size:.85rem;color:#64748b}
+.item p{
+    font-size:.92rem;margin-top:3px}
+ul{
+    margin-left:20px}li{margin-bottom:3px;font-size:.93rem}
+.cols{
+    display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cols h3{
+    color:var(--navy2);font-size:1rem;margin-bottom:6px}
+table{
+    width:100%;border-collapse:collapse;border-radius:10px;overflow:hidden}
+th{
+    background:var(--navy);color:#fff;padding:10px}
+td{
+    padding:10px;text-align:center;font-size:.92rem}
+tr:nth-child(even) td{
+    background:var(--light)}
+tr:hover td{
+    background:#d3e3fd}
+form label{
+    display:block;margin-top:14px;font-size:.9rem;font-weight:600;color:var(--navy2)}
+form input[
+    type=text],form input[type=email],form textarea{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:8px;font:inherit}
+form input:focus,form textarea:focus{
+    outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.2)}
+form textarea{
+    height:140px;resize:vertical}
+.radios label{
+    display:inline;font-weight:400;margin-right:12px}
+button{
+    margin-top:16px;background:var(--navy);color:#fff;border:0;padding:11px 38px;border-radius:8px;font-weight:700;cursor:pointer;transition:.2s}
+button:hover{
+    background:var(--blue);transform:translateY(-2px)}
+footer{
+    background:var(--navy);color:#cbd5e1;text-align:center;padding:16px;font-size:.8rem}
+@media(max-width:760px){main.wrap{grid-template-columns:1fr}aside{position:static}header .wrap{justify-content:center;text-align:center}nav a{margin:0 10px}.cols{grid-template-columns:1fr}}

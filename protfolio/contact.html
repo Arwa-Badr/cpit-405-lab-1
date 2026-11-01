@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Arwa Badr - CPIT 405 Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div>
+        <h1>Arwa Badr</h1>
+        <p>IT Student | Cybersecurity</p>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="labsA.html">Labs</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <aside class="card">
+      <div class="avatar">AB</div>
+      <h2>Contact Info</h2>
+      <p><strong>Email:</strong><br><a href="mailto:ahbadr@stu.kau.edu.sa">ahbadr@stu.kau.edu.sa</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+966500500794">+966500500794</a></p>
+      <p><a href="https://github.com/Arwa-Badr">GitHub</a> | <a href="https://www.linkedin.com/in/arwa-badr-2a0993382">LinkedIn</a></p>
+    </aside>
+    <div class="card">
+      <section>
+        <h2>Contact Me</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="f0887a8d-11eb-429a-9b6c-65d77d5d3a30">
+          <input type="hidden" name="subject" value="New message from my portfolio">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <p class="radios" style="margin-top:14px"><strong>Message Type:</strong>
+            <label><input type="radio" name="type" value="Inquiry" checked> Inquiry</label>
+            <label><input type="radio" name="type" value="Feedback"> Feedback</label>
+          </p>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>&copy; 2026 Arwa Badr - CPIT 405 Portfolio</footer>
+</body>
+</html>
