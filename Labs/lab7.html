@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CPIT-405 | Lab 7 – Unsplash API</title>
+  <link rel="stylesheet" href="lab7.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="brand">Unsplash API</span>
+    <input type="text" id="searchInput" value="Makkah" aria-label="Search term">
+    <button type="button" id="xhrBtn">Search using XHR</button>
+    <button type="button" id="promiseBtn">Search using fetch (promises)</button>
+    <button type="button" id="asyncBtn">Search using fetch (async/await)</button>
+  </nav>
+
+  <p id="message" role="status"></p>
+  <section id="gallery" class="gallery"></section>
+
+  <script src="lab7.js"></script>
+</body>
+</html>

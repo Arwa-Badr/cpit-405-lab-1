@@ -1,0 +1,153 @@
+
+body {
+    font-family: Georgia, serif;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 55px;
+    margin-bottom: 45px;
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 60px;
+}
+
+.voting {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.voting button {
+    background-color: #e9e9ed;
+    border: 2px solid #c5c5cf;
+    border-radius: 10px;
+    padding: 10px 35px;
+    font-size: 65px;
+    cursor: pointer;
+    min-width: 250px;
+}
+
+.voting button:hover {
+    background-color: #d8d8df;
+}
+
+.voting button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#likeCount, #dislikeCount {
+    color: black;
+}
+
+.comment-section {
+    width: 85%;
+    margin: auto;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 25px;
+    resize: vertical;
+    font-family: monospace;
+}
+
+.comment-buttons {
+    margin-top: 25px;
+}
+
+.comment-buttons button {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 45px;
+    font-size: 28px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.comment-buttons button:hover {
+    background-color: #333;
+}
+
+#commentsList {
+    width: 80%;
+    margin: 25px auto;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+#commentsList li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+#message {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+#resetBtn {
+    background-color: #b52b2b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .voting {
+        gap: 10px;
+    }
+
+    .voting button {
+        min-width: 0;
+        padding: 12px;
+        font-size: 35px;
+    }
+
+    .comment-section {
+        width: 95%;
+    }
+
+    textarea {
+        height: 180px;
+        font-size: 18px;
+    }
+
+    .comment-buttons button {
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+}

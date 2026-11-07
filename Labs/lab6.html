@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Like or Dislike</title>
+    <link rel="stylesheet" href="lab6.css">
+</head>
+<body>
+
+    <h1>Lab 6</h1>
+    <h2>Like or dislike</h2>
+
+    <div class="voting">
+        <button id="likeBtn">
+            👍 <span id="likeCount">0</span>
+        </button>
+
+        <button id="dislikeBtn">
+            👎 <span id="dislikeCount">0</span>
+        </button>
+    </div>
+
+    <h2>Comments</h2>
+
+    <div class="comment-section">
+        <textarea id="commentInput"
+            placeholder="Write a comment..."></textarea>
+
+        <div class="comment-buttons">
+            <button id="submitBtn">Submit</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+    </div>
+
+    <ul id="commentsList"></ul>
+
+    <p id="message"></p>
+
+    <button id="resetBtn">Reset Everything</button>
+
+    <script src="lab6.js"></script>
+</body>
+</html>
